@@ -1,4 +1,5 @@
 import Botao from '../components/Botao'
+import Formulario from '../components/Formulario'
 import Layout from '../components/Layout'
 import Tabela from '../components/Tabela'
 import Cliente from '../core/Cliente'
@@ -23,13 +24,14 @@ export default function Home() {
     <div className="flex h-screen items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500 text-white">
       <Layout titulo="Cadastro simples">
         <div className="flex justify-end">
-          <Botao className="mb-4">Novo cliente</Botao>
+          <Botao className="mb-4 bg-purple-400">Novo cliente</Botao>
         </div>
-        <Tabela
+        {/* <Tabela
           clientes={clientes}
           clienteSelecionado={clienteSelecionado}
           clienteExcluido={clienteExcluido}
-        />
+        /> */}
+        <Formulario cliente={clientes[1]} />
       </Layout>
     </div>
   )
