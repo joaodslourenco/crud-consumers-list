@@ -43,7 +43,7 @@ export default function Tabela(props: TabelaProps) {
         {props.clienteSelecionado ? (
           <button
             onClick={() => props.clienteSelecionado?.(cliente)}
-            className="flex justify-center items-center text-green-600 hover:bg-purple-50 rounded-full p-2 m-1"
+            className="flex justify-center items-center text-green-600 h-12 w-12 hover:bg-purple-50 rounded-full p-2 m-1"
           >
             {IconeEdicao}
           </button>
@@ -53,7 +53,7 @@ export default function Tabela(props: TabelaProps) {
         {props.clienteExcluido ? (
           <button
             onClick={() => props.clienteExcluido?.(cliente)}
-            className="flex justify-center items-center text-red-500 hover:bg-purple-50 rounded-full p-2 m-1"
+            className="flex justify-center items-center text-red-500 h-12 w-12 hover:bg-purple-50 rounded-full p-2 m-1"
           >
             {IconeLixo}
           </button>
