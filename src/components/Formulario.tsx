@@ -22,7 +22,7 @@ export default function Formulario(props: FormularioProps) {
         false
       )}
       <Entrada
-        texto="nome"
+        texto="Nome"
         valor={nome}
         valorMudou={setNome}
         className="mb-4"
